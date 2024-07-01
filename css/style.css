@@ -9,13 +9,24 @@
   font-family: "Roboto", sans-serif;
 }
 
+/* --------------------------------------------------------------------- */
 .box {
   max-width: 1350px;
+  min-height: 1000px;
   border: 1px solid #000;
   margin: 0 auto;
   padding: 0 15px;
 }
 
+/* --------------------------------------------------------------------- */
 .header {
   text-align: center;
+}
+
+/* --------------------------------------------------------------------- */
+[class*="__container"] {
+  max-width: 1300px;
+  padding: 0 15px;
+  margin: 0 auto;
+  border: 1px solid #000;
 }
