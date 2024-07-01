@@ -11,22 +11,133 @@
 
 /* --------------------------------------------------------------------- */
 .box {
-  max-width: 1350px;
+  max-width: 650px;
   min-height: 1000px;
   border: 1px solid #000;
   margin: 0 auto;
-  padding: 0 15px;
+  /* padding: 0 15px; */
 }
 
 /* --------------------------------------------------------------------- */
+.header--margin {
+  margin-bottom: 40px;
+}
+
 .header {
   text-align: center;
+  border-bottom: 1px solid #000;
+  padding: 0 15px;
 }
 
 /* --------------------------------------------------------------------- */
 [class*="__container"] {
-  max-width: 1300px;
+  max-width: 600px;
   padding: 0 15px;
   margin: 0 auto;
   border: 1px solid #000;
+  text-align: center;
+}
+
+[class*="__title"] {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.flexbox-page--margin {
+  margin-bottom: 40px;
+}
+
+.flexbox-page {
+  padding: 30px 0 20px 0;
+  position: relative;
+}
+
+.flexbox-page::before {
+  content: "";
+  background: url(../img/icon_bookmark_white.jpg) 0 0 / 100% no-repeat;
+  width: 40px;
+  height: 47px;
+  position: absolute;
+  top: -20px;
+  right: 20px;
+}
+
+.flexbox-page__what {
+  max-width: 250px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+[class*="__button"] {
+  padding: 15px 25px;
+  border-radius: 5px;
+  border: 2px solid #00000070;
+  margin-bottom: 50px;
+}
+
+@media (any-hover: hover) {
+  [class*="__button"]:hover {
+    background-color: rgba(128, 128, 128, 0.667);
+    cursor: pointer;
+  }
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.items-flexbox {
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px 10px;
+}
+
+.items-flexbox__item {
+  background-color: rgba(128, 128, 128, 0.377);
+  border-radius: 5px;
+}
+
+.items-flexbox__item > a {
+  color: #000;
+  padding: 5px 15px;
+}
+
+@media (any-hover: hover) {
+  .items-flexbox__item:hover {
+    background-color: rgba(128, 128, 128, 0.667);
+  }
+}
+
+/* ============================================================================================== */
+.lorem-page {
+  padding: 30px 0 20px 0;
+  position: relative;
+}
+
+.lorem-page::before {
+  content: "";
+  background: url(../img/icon_bookmark_black.png) 0 0 / 100% no-repeat;
+  width: 35px;
+  height: 53px;
+  position: absolute;
+  top: -20px;
+  right: 20px;
+}
+
+.lorem-page__lorem {
+  max-width: 220px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.lorem-page__button {
+  margin-bottom: 30px;
 }
