@@ -31,7 +31,10 @@ console.log("likes", likes);
 console.log("user", userName);
 console.log("isReported", isReported);
 
-likes++;
+// likes = likes + 1;
+// likes ++
+// likes = 1;
+likes += 1;
 
 console.log(likes);
 
