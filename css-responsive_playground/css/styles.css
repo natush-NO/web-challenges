@@ -112,9 +112,6 @@ h1 {
 }
 
 @media (prefers-color-scheme: dark) {
-  body {
-    background-color: var(-color-granite); /* Колір фону для темного режиму */
-  }
   .box--four {
     background-color: var(--color-nemo);
   }
