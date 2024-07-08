@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Personal Profile Form</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+  <section>
+    <h1>Create your Personal Profile</h1>
+    <form action="#">
+      <p for="personal">We want to get to know you! Please enternyour personal information.</p>
+      <fieldset id="personal" aria-describedby="personal">
+        <legend>Personal information</legend>
+        <label for="first-name">First Name</label>
+        <input id="first-name" type="text" required name="first_name">
+        <label for="last-name">Last Name</label>
+        <input id="last-name" type="text" required name="last_name">
+        <label for="date">Your Birthday</label>
+        <input id="date" type="date" required name="birthday">
+      </fieldset>
+      <p>Can you tell us a little bit more? We want to annoy you with unwanted ads.</p>
+      <fieldset aria-describedby="favoerite">
+        <legend>Further Information</legend>
+        <label for="color">Favourite Color</label>
+        <input id="color" type="color" value="#E5430F" name="favorite_color">
+        <label for="favourite-pet">What's your favourite pet?</label>
+        <select name="favorite_pet" id="favourite-pet">
+          <option value="">--Please choose an option--</option>
+          <option value="cat">Cat</option>
+          <option value="dog">dog</option>
+        </select>
+      </fieldset>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+</body>
+
+</html>
