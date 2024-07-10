@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- <link rel="stylesheet" href="css/style.css"> -->
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/script.js" defer></script>
+  <link rel="stylesheet" href="css/user.css">
+  <script src="js/user.js" defer></script>
   <title>Chellenges 01.07.24</title>
 </head>
 
@@ -24,8 +24,10 @@
 
     <!-- ============================================================ -->
     <div class="page__container page__container--main">
-      <img class="page__image" src="img/user_icon_white.png" alt="User">
-      <h2 class="page__title">Max Doe</h2>
+      <div class="page__top">
+        <img class="page__image" src="img/user_icon_white.png" alt="User">
+        <h2 class="page__title">Max Doe</h2>
+      </div>
       <h3 class="page__about-me">About me</h3>
     </div>
 
@@ -34,24 +36,26 @@
       <div class="footer__container">
         <div class="footer__images">
           <nav class="footer__nav">
-            <a href="index.html" class="footer__link" data-js="house-white">
+
+            <a href="index.html" class="footer__link footer__link-house" data-js="house-white">
               <img class="footer__house-white" src="img/home_icon_white.png" alt="Haus">
             </a>
-            <!-- <a href="#" class="footer__link footer__link--house" data-js="house-black">
+            <a href="#" class="footer__link house-none footer__link--house" data-js="house-black">
               <img class="footer__house-black" src="img/home_icon_black.png" alt="Haus">
-            </a> -->
-            <a href="bookmarks.html" class="footer__link" data-js="bookmark-white">
+            </a>
+            <a href="bookmarks.html" class="footer__link footer__link-bookmark" data-js="bookmark-white">
               <img class="footer__bookmark-white" src="img/icon_bookmark_white.png" alt="Bookmark">
             </a>
-            <!-- <a href="#" class="footer__link footer__link--bookmark" data-js="bookmark-black">
+            <a href="#" class="footer__link bookmark-none footer__link--house footer__link--bookmark" data-js="bookmark-black">
               <img class="footer__bookmark-black" src="img/icon_bookmark_black.png" alt="Bookmark">
-            </a> -->
-            <a href="#" class="footer__link" data-js="user-white">
+            </a>
+            <a href="#" class="footer__link footer__link-user" data-js="user-white">
               <img class="footer__user-white" src="img/user_icon_white.png" alt="Benutzer">
             </a>
-            <!-- <a href="#" class="footer__link footer__link--user" data-js="user-black">
+            <a href="#" class="footer__link user-none footer__link--user" data-js="user-black">
               <img class="footer__user-black" src="img/user_icon_black.png" alt="Benutzer">
-              </a> -->
+            </a>
+
           </nav>
         </div>
       </div>

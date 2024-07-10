@@ -40,6 +40,37 @@
 }
 
 /* ============================================================================================== */
+.page__container--main {
+  min-height: 1000px;
+  padding: 250px 50px 0 50px;
+  max-width: 600px;
+}
+
+.page__top {
+  display: flex;
+  gap: 20px 50px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+
+.page__image {
+  flex: 0 0 150px;
+  display: inline;
+  overflow: hidden;
+}
+
+.page__title {
+  font-size: 40px;
+  font-weight: 600;
+  /* background-color: aqua; */
+}
+
+.page__about-me {
+  text-align: start;
+}
 
 /* ============================================================================================== */
 
@@ -117,24 +148,6 @@
 }
 
 .footer__link-user:hover {
-  background: url(../img/user_icon_black.png) 0 0 / 100% no-repeat;
-  width: 70px;
-  height: 70px;
-}
-
-.footer__link-house:active {
-  background: url(../img/home_icon_black.png) 0 0 / 100% no-repeat;
-  width: 70px;
-  height: 70px;
-}
-
-.footer__link-bookmark:active {
-  background: url(../img/icon_bookmark_black.png) 0 0 / 100% no-repeat;
-  width: 70px;
-  height: 70px;
-}
-
-.footer__link-user:active {
   background: url(../img/user_icon_black.png) 0 0 / 100% no-repeat;
   width: 70px;
   height: 70px;

@@ -211,21 +211,3 @@ li {
   width: 70px;
   height: 70px;
 }
-
-.footer__link-house:active {
-  background: url(../img/home_icon_black.png) 0 0 / 100% no-repeat;
-  width: 70px;
-  height: 70px;
-}
-
-.footer__link-bookmark:active {
-  background: url(../img/icon_bookmark_black.png) 0 0 / 100% no-repeat;
-  width: 70px;
-  height: 70px;
-}
-
-.footer__link-user:active {
-  background: url(../img/user_icon_black.png) 0 0 / 100% no-repeat;
-  width: 70px;
-  height: 70px;
-}
