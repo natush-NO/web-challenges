@@ -40,6 +40,13 @@
 
 /* ============================================================================================== */
 
+.page__container {
+  max-width: 1000px;
+  padding: 0 15px;
+  margin: 0 auto;
+  text-align: center;
+}
+
 .page__container--main {
   padding: 150px;
 }
@@ -59,11 +66,17 @@
     -1px -1px 10px 1px rgba(0, 0, 0, 0.125);
 }
 
-.bookmark-black-card {
+.card__bookmark-black {
   display: none;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  position: absolute;
+  top: -20px;
+  right: 20px;
 }
 
-.card__bookmark {
+.card__bookmark-white {
   width: 50px;
   height: 50px;
   overflow: hidden;
@@ -153,7 +166,7 @@ li {
 
 .footer__link--house {
   position: absolute;
-  bottom: 0;
+  bottom: 5px;
   left: 290px;
 }
 
