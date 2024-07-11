@@ -6,7 +6,7 @@
   min-height: 100%;
   overflow: clip;
 
-  background-color: #f8f8f8;
+  background-color: #98abee;
   font-family: "Roboto", sans-serif;
 }
 
@@ -23,12 +23,13 @@
   width: 100%;
   text-align: center;
   padding: 15px 0;
-  background-color: rgba(248, 248, 248, 0.8);
+  background-color: rgba(152, 171, 238, 0, 9);
   position: fixed;
   top: 0;
   left: 0;
   backdrop-filter: blur(3px);
   z-index: 999;
+  box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.5);
 }
 
 .header__title {
@@ -53,7 +54,11 @@
   border-radius: 8px;
   position: relative;
   margin: 0 auto;
-  background-color: #eeeeee;
+  background: radial-gradient(
+    circle,
+    rgba(229, 233, 128, 1) 0%,
+    rgba(140, 181, 230, 1) 100%
+  );
   padding: 30px 25px;
   box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.125),
     -1px -1px 10px 1px rgba(0, 0, 0, 0.125);
@@ -79,19 +84,31 @@
   margin-bottom: 25px;
 }
 
+.pege__element-button {
+  position: relative;
+  margin-bottom: 100px;
+}
+
 [class*="__button"] {
   padding: 10px 10px;
   border-radius: 5px;
-  border: 2px solid #00000070;
+  border: 2px solid #222831;
   background-color: rgba(128, 128, 128, 0.134);
-  margin-bottom: 30px;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 @media (any-hover: hover) {
   [class*="__button"]:hover {
-    background-color: rgba(128, 128, 128, 0.667);
+    background-color: rgba(128, 128, 128, 0.4);
     cursor: pointer;
   }
+}
+
+.hidden-button {
+  display: none;
 }
 
 li {
@@ -122,9 +139,11 @@ li {
 
 .footer {
   width: 100%;
+  min-height: 100px;
   padding: 15px 0;
-  background-color: rgba(248, 248, 248, 0.8);
+  background-color: rgba(152, 171, 238, 0, 9);
   backdrop-filter: blur(15px);
+  box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.5);
   position: fixed;
   bottom: 0;
   z-index: 999;
@@ -138,6 +157,8 @@ li {
   margin: 0 auto;
   text-align: center;
   position: relative;
+  bottom: -70px;
+  left: 0;
 }
 
 .footer__link {
@@ -153,7 +174,7 @@ li {
 
 .footer__link--house {
   position: absolute;
-  bottom: 0;
+  bottom: 0px;
   left: 290px;
 }
 

@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link rel="stylesheet" href="css/style.css"> -->
   <link rel="stylesheet" href="css/style.css">
   <script src="js/index.js" defer></script>
   <title>Chellenges 01.07.24</title>
@@ -13,7 +12,6 @@
 <body>
 
   <div class="wrapper">
-    <!-- <div class="box"> -->
 
     <!-- ============================================================ -->
     <header class="header" role="banner">
@@ -28,10 +26,13 @@
         <img class="card__bookmark bookmark-white-card" src="img/icon_bookmark_white.png" alt="Bookmark" data-js="bookmark-white-card">
         <img class="card__bookmark bookmark-black-card" src="img/icon_bookmark_black.png" alt="Bookmark" data-js="bookmark-black-card">
         <h2 class="card__title">What property flips the oxes in flexbox?</h2>
-        <button type="button" class="card__button" aria-label="Show Answer">Show Answer</button>
+        <div class="pege__element-button">
+          <button type="button" class="card__button" aria-label="Show Answer" data-js="button-question">Show Answer</button>
+          <button type="button" class="card__button hidden-button" aria-label="Hide answer" data-js="button-answer">Hide answer</button>
+        </div>
         <ul class="card__items items-card" role="button">
           <li class="items-card__item" id="html">#html</li>
-          <li class="items-card__item" id="flexbox">#flexbox</li>
+          <li class="items-card__item flexbox-card" id="flexbox" data-js="flexbox-card">#flexbox</li>
           <li class="items-card__item" id="css">#css</li>
         </ul>
       </section>
@@ -43,19 +44,19 @@
         <div class="footer__images">
           <nav class="footer__nav">
 
-            <a href="#" class="footer__link footer__link-house" data-js="house-white">
+            <a href="#" class="footer__link footer__link--house" data-js="house-white">
               <img class="footer__house-white" src="img/home_icon_white.png" alt="Haus">
             </a>
             <a href="#" class="footer__link house-none footer__link--house" data-js="house-black">
-              <img class="footer__house-black" src="img/home_icon_black.png" alt="Haus">
+              <img class="footer__house-black" src="img/home_icon_black_two.png" alt="Haus">
             </a>
-            <a href="bookmarks.html" class="footer__link footer__link-bookmark" data-js="bookmark-white">
+            <a href="bookmarks.html" class="footer__link footer__link--bookmark" data-js="bookmark-white">
               <img class="footer__bookmark-white" src="img/icon_bookmark_white.png" alt="Bookmark">
             </a>
-            <a href="#" class="footer__link bookmark-none footer__link--house footer__link--bookmark" data-js="bookmark-black">
+            <a href="#" class="footer__link bookmark-none footer__link--bookmark" data-js="bookmark-black">
               <img class="footer__bookmark-black" src="img/icon_bookmark_black.png" alt="Bookmark">
             </a>
-            <a href="user.html" class="footer__link footer__link-user" data-js="user-white">
+            <a href="user.html" class="footer__link footer__link--user" data-js="user-white">
               <img class="footer__user-white" src="img/user_icon_white.png" alt="Benutzer">
             </a>
             <a href="#" class="footer__link user-none footer__link--user" data-js="user-black">
@@ -66,7 +67,6 @@
         </div>
       </div>
     </footer>
-    <!-- </div> -->
   </div>
 </body>
 
