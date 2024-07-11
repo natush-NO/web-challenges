@@ -41,7 +41,7 @@
 
 /* ============================================================================================== */
 
-.page__container--main {
+.page {
   padding: 150px;
 }
 
@@ -175,19 +175,25 @@ li {
 .footer__link--house {
   position: absolute;
   bottom: 0px;
-  left: 290px;
+  left: 100px;
 }
 
 .footer__link--bookmark {
   position: absolute;
   bottom: 0;
-  left: 450px;
+  left: 325px;
+}
+
+.footer__link--plus {
+  position: absolute;
+  bottom: 0;
+  left: 545px;
 }
 
 .footer__link--user {
   position: absolute;
   bottom: 0;
-  left: 611px;
+  left: 800px;
 }
 
 .house-none {
@@ -195,6 +201,10 @@ li {
 }
 
 .bookmark-none {
+  display: none;
+}
+
+.plus-none {
   display: none;
 }
 
@@ -210,6 +220,12 @@ li {
 
 .footer__link--bookmark:hover {
   background: url(../img/icon_bookmark_black.png) 0 0 / 100% no-repeat;
+  width: 70px;
+  height: 70px;
+}
+
+.footer__link--plus:hover {
+  background: url(../img/plus_icon_black.png) 0 0 / 100% no-repeat;
   width: 70px;
   height: 70px;
 }

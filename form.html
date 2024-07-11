@@ -4,9 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/index.js" defer></script>
-  <title>Chellenges 01.07.24</title>
+  <link rel="stylesheet" href="./css/form.css">
+  <script src="js/form.js" defer></script>
+
+  <title>Create new cards</title>
 </head>
 
 <body>
@@ -14,6 +15,7 @@
   <div class="wrapper">
 
     <!-- ============================================================ -->
+
     <header class="header" role="banner">
       <div class="header__container">
         <h1 class="header__title">Quiz App</h1>
@@ -22,24 +24,29 @@
 
     <!-- ============================================================ -->
     <main class="page">
-      <div class="page__container page__container--main">
-        <section class="page__card card card--margin">
-          <img class="card__bookmark bookmark-white-card" src="img/icon_bookmark_white.png" alt="Bookmark" data-js="bookmark-white-card">
-          <img class="card__bookmark bookmark-black-card" src="img/icon_bookmark_black.png" alt="Bookmark" data-js="bookmark-black-card">
-          <h2 class="card__title">What property flips the oxes in flexbox?</h2>
-          <div class="pege__element-button">
-            <button type="button" class="card__button" aria-label="Show Answer" data-js="button-question">Show Answer</button>
-            <button type="button" class="card__button hidden-button" aria-label="Hide answer" data-js="button-answer">Hide answer</button>
-          </div>
-          <ul class="card__items items-card" role="button">
-            <li class="items-card__item" id="html">#html</li>
-            <li class="items-card__item flexbox-card" id="flexbox" data-js="flexbox-card">#flexbox</li>
-            <li class="items-card__item" id="css">#css</li>
-          </ul>
-        </section>
+
+      <div class="page__container">
+        <form class="page__form page__form--margin" data-js="form">
+
+          <label class="page__label-question label" for="question">Your question:</label>
+          <textarea class="page__textarea-question textarea" name="question" id="question" placeholder="Your question:" maxlength="150"></textarea>
+
+
+          <label class="page__label-answer label" for="answer">Your answer:</label>
+          <textarea class="page__textarea-answer textarea" name="answer" id="answer" placeholder="Your answer:" maxlength="150"></textarea>
+          <!-- <span class="page__counter" id="answer-counter">There are no characters left: 150</span> -->
+
+          <label class="page__label-tag  label" for="tag-page">Tag:</label>
+          <input class="page__input-tag input" type="text" name="tag" id="tag-page" placeholder="Tag:" />
+
+          <button class="page__button" type="submit">Submit</button>
+        </form>
+
+        <div class="page__cards-container" id="cards-container" data-js="cards-container">
+        </div>
+
       </div>
     </main>
-
 
     <!-- ============================================================ -->
     <footer class="footer" role="contentinfo">
@@ -47,7 +54,7 @@
         <div class="footer__images">
           <nav class="footer__nav">
 
-            <a href="#" class="footer__link footer__link--house" data-js="house-white">
+            <a href="index.html" class="footer__link footer__link--house" data-js="house-white">
               <img class="footer__house-white" src="img/home_icon_white.png" alt="Haus">
             </a>
             <a href="#" class="footer__link house-none footer__link--house" data-js="house-black">
@@ -59,7 +66,7 @@
             <a href="#" class="footer__link bookmark-none footer__link--bookmark" data-js="bookmark-black">
               <img class="footer__bookmark-black" src="img/icon_bookmark_black.png" alt="Bookmark">
             </a>
-            <a href="form.html" class="footer__link footer__link--plus" data-js="plus-white">
+            <a href="#" class="footer__link footer__link--plus" data-js="plus-white">
               <img class="footer__plus-white" src="img/plus__icon_white.png" alt="Plus icon">
             </a>
             <a href="#" class="footer__link plus-none footer__link--plus" data-js="plus-black">
