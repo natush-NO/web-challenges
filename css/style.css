@@ -202,19 +202,19 @@ li {
   display: none;
 }
 
-.footer__link-house:hover {
-  background: url(../img/home_icon_black.png) 0 0 / 100% no-repeat;
+.footer__link--house:hover {
+  background: url(../img/home_icon_black_two.png) 0 0 / 100% no-repeat;
   width: 70px;
   height: 70px;
 }
 
-.footer__link-bookmark:hover {
+.footer__link--bookmark:hover {
   background: url(../img/icon_bookmark_black.png) 0 0 / 100% no-repeat;
   width: 70px;
   height: 70px;
 }
 
-.footer__link-user:hover {
+.footer__link--user:hover {
   background: url(../img/user_icon_black.png) 0 0 / 100% no-repeat;
   width: 70px;
   height: 70px;

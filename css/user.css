@@ -6,8 +6,7 @@
   min-height: 100%;
   overflow: clip;
 
-  background-color: #f8f8f8;
-  /* color: #000; */
+  background-color: #98abee;
   font-family: "Roboto", sans-serif;
 }
 
@@ -24,12 +23,13 @@
   width: 100%;
   text-align: center;
   padding: 15px 0;
-  background-color: rgba(248, 248, 248, 0.8);
+  background-color: rgba(152, 171, 238, 0, 9);
   position: fixed;
   top: 0;
   left: 0;
   backdrop-filter: blur(3px);
   z-index: 999;
+  box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.5);
 }
 
 .header__title {
@@ -76,9 +76,11 @@
 
 .footer {
   width: 100%;
+  min-height: 100px;
   padding: 15px 0;
-  background-color: rgba(248, 248, 248, 0.8);
+  background-color: rgba(152, 171, 238, 0, 9);
   backdrop-filter: blur(15px);
+  box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.5);
   position: fixed;
   bottom: 0;
   z-index: 999;
@@ -92,6 +94,8 @@
   margin: 0 auto;
   text-align: center;
   position: relative;
+  bottom: -70px;
+  left: 0;
 }
 
 .footer__link {
@@ -107,7 +111,7 @@
 
 .footer__link--house {
   position: absolute;
-  bottom: 0;
+  bottom: 0px;
   left: 290px;
 }
 
@@ -135,19 +139,19 @@
   display: none;
 }
 
-.footer__link-house:hover {
-  background: url(../img/home_icon_black.png) 0 0 / 100% no-repeat;
+.footer__link--house:hover {
+  background: url(../img/home_icon_black_two.png) 0 0 / 100% no-repeat;
   width: 70px;
   height: 70px;
 }
 
-.footer__link-bookmark:hover {
+.footer__link--bookmark:hover {
   background: url(../img/icon_bookmark_black.png) 0 0 / 100% no-repeat;
   width: 70px;
   height: 70px;
 }
 
-.footer__link-user:hover {
+.footer__link--user:hover {
   background: url(../img/user_icon_black.png) 0 0 / 100% no-repeat;
   width: 70px;
   height: 70px;
