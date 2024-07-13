@@ -1,22 +1,12 @@
-import getRandomColor from "../../utils/randomColor.js";
+import { getRandomColor } from "../../utils/randomColor";
 
-export function Circle() {
+export default function Circle() {
   const circle = document.createElement("div");
   circle.classList.add("circle");
   circle.addEventListener("click", () => {
-    circle.style.backgroundColor = getRandomColor();
+    let color = getRandomColor();
+    circle.style.backgroundColor = color;
   });
+
   return circle;
 }
-
-const circleElement = Circle();
-
-root.append(circleElement);
-
-// ======================================================================
-
-export const circle = document.createElement("div");
-circle.classList.add("circle");
-circle.addEventListener("click", () => {
-  circle.style.backgroundColor = getRandomColor();
-});

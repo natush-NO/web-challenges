@@ -1,10 +1,13 @@
 console.clear();
 
-import getRandomColor from "./utils/randomColor.js";
-import { circle } from "./components/Circle/Circle.js";
-import { square } from "./components/Square/Square.js";
-import { pentagon } from "./components/Pentagon/Pentagon.js";
+import Circle from "./components/Circle/Circle";
+import Square from "./components/Square/Square";
+import Pentagon from "./components/Pentagon/Pentagon";
 
 const root = document.getElementById("root");
 
-root.append(circle, square, pentagon);
+const circleElement = Circle();
+const squareElement = Square();
+const pentagonElement = Pentagon();
+
+root.append(circleElement, squareElement, pentagonElement);
