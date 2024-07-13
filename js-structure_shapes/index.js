@@ -1,8 +1,8 @@
 console.clear();
 
-import Circle from "./components/Circle/Circle";
-import Square from "./components/Square/Square";
-import Pentagon from "./components/Pentagon/Pentagon";
+import Circle from "./components/Circle/Circle.js";
+import Square from "./components/Square/Square.js";
+import Pentagon from "./components/Pentagon/Pentagon.js";
 
 const root = document.getElementById("root");
 
