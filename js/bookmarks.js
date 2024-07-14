@@ -63,19 +63,92 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // ==============================================================================
+// document.addEventListener("DOMContentLoaded", function () {
+//   const bookmarkWhite = document.querySelector("[data-js='bookmark-white']");
+//   const bookmarkBlack = document.querySelector("[data-js='bookmark-black']");
+
+//   bookmarkWhite.addEventListener("click", () => {
+//     bookmarkBlack.classList.toggle("bookmark-none");
+//   });
+// });
+
+// document.addEventListener("DOMContentLoaded", function () {
+//   const bookmarkBlack = document.querySelector("[data-js='bookmark-black']");
+
+//   bookmarkBlack.addEventListener("click", () => {
+//     bookmarkBlack.classList.toggle("bookmark-none");
+//   });
+// });
+
 document.addEventListener("DOMContentLoaded", function () {
   const bookmarkWhite = document.querySelector("[data-js='bookmark-white']");
   const bookmarkBlack = document.querySelector("[data-js='bookmark-black']");
 
+  // Перевірка стану при завантаженні сторінки
+  const bookmarkState = localStorage.getItem("bookmarkState");
+  if (bookmarkState === "black") {
+    bookmarkBlack.classList.remove("bookmark-none");
+    bookmarkWhite.classList.add("bookmark-none");
+  }
+
   bookmarkWhite.addEventListener("click", () => {
-    bookmarkBlack.classList.toggle("bookmark-none");
+    bookmarkBlack.classList.remove("bookmark-none");
+    bookmarkWhite.classList.add("bookmark-none");
+    localStorage.setItem("bookmarkState", "black"); // Зберігаємо стан в localStorage
+  });
+
+  bookmarkBlack.addEventListener("click", () => {
+    bookmarkBlack.classList.add("bookmark-none");
+    bookmarkWhite.classList.remove("bookmark-none");
+    localStorage.setItem("bookmarkState", "white"); // Зберігаємо стан в localStorage
   });
 });
 
+// document.addEventListener("DOMContentLoaded", function () {
+//   const houseWhite = document.querySelector("[data-js='house-white']");
+//   const houseBlack = document.querySelector("[data-js='house-black']");
+
+//   // Перевірка стану при завантаженні сторінки
+//   const houseState = localStorage.getItem("houseState");
+//   if (houseState === "black") {
+//     houseBlack.classList.remove("house-none");
+//     houseWhite.classList.add("house-none");
+//   }
+
+//   houseWhite.addEventListener("click", () => {
+//     houseBlack.classList.remove("house-none");
+//     houseWhite.classList.add("house-none");
+//     localStorage.setItem("houseState", "black"); // Зберігаємо стан в localStorage
+//   });
+
+//   houseBlack.addEventListener("click", () => {
+//     houseBlack.classList.add("house-none");
+//     houseWhite.classList.remove("house-none");
+//     localStorage.setItem("houseState", "white"); // Зберігаємо стан в localStorage
+//   });
+// });
+
+// ===========================================================================
 document.addEventListener("DOMContentLoaded", function () {
+  const bookmarkWhite = document.querySelector("[data-js='bookmark-white']");
   const bookmarkBlack = document.querySelector("[data-js='bookmark-black']");
 
-  bookmarkBlack.addEventListener("click", () => {
-    bookmarkBlack.classList.toggle("bookmark-none");
+  // Перевірка стану при завантаженні сторінки
+  const bookmarkState = localStorage.getItem("bookmarkState");
+  if (bookmarkState === "black") {
+    bookmarkBlack.classList.remove("bookmark-none");
+    bookmarkWhite.classList.add("bookmark-none");
+  }
+
+  bookmarkWhite.addEventListener("click", () => {
+    bookmarkBlack.classList.remove("bookmark-none");
+    bookmarkWhite.classList.add("bookmark-none");
+    localStorage.setItem("bookmarkState", "black"); // Зберігаємо стан в localStorage
+  });
+
+  houseBlack.addEventListener("click", () => {
+    bookmarkBlack.classList.add("bookmark-none");
+    bookmarkWhite.classList.remove("bookmark-none");
+    localStorage.setItem("bookmarkState", "white"); // Зберігаємо стан в localStorage
   });
 });

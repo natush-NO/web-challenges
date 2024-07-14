@@ -23,7 +23,7 @@
   width: 100%;
   text-align: center;
   padding: 15px 0;
-  background-color: rgba(152, 171, 238, 0, 9);
+  background-color: rgba(152, 171, 238, 0.9);
   position: fixed;
   top: 0;
   left: 0;
@@ -141,7 +141,7 @@ li {
   width: 100%;
   min-height: 100px;
   padding: 15px 0;
-  background-color: rgba(152, 171, 238, 0, 9);
+  background-color: rgba(152, 171, 238, 0.9);
   backdrop-filter: blur(15px);
   box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.5);
   position: fixed;

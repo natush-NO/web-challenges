@@ -23,7 +23,7 @@
   width: 100%;
   text-align: center;
   padding: 15px 0;
-  background-color: rgba(152, 171, 238, 0, 9);
+  background-color: rgba(152, 171, 238, 0.9);
   position: fixed;
   top: 0;
   left: 0;
@@ -41,7 +41,7 @@
 
 /* ============================================================================================== */
 
-.page {
+/* .page {
   padding: 150px;
 }
 
@@ -52,9 +52,10 @@
   border-radius: 10px;
 }
 
-.page__form--margin {
-  margin-bottom: 50px;
-}
+.page__cards-container--margin {
+  margin-top: 100px;
+  background-color: #124e8a;
+} */
 
 .page__form {
   display: flex;
@@ -151,13 +152,22 @@
   font-size: 34px;
   font-weight: 600;
 }
+
+.card__button-answer {
+}
+
+.card__button-bookmark {
+  position: absolute;
+  right: 1rem;
+  top: -1.5rem;
+}
 /* ============================================================================================== */
 
 .footer {
   width: 100%;
   min-height: 100px;
   padding: 15px 0;
-  background-color: rgba(152, 171, 238, 0, 9);
+  background-color: rgba(152, 171, 238, 0.9);
   backdrop-filter: blur(15px);
   box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.5);
   position: fixed;
@@ -200,7 +210,7 @@
   left: 325px;
 }
 
-.footer__link--plus {
+.footer__link--form {
   position: absolute;
   bottom: 0;
   left: 545px;
@@ -220,7 +230,7 @@
   display: none;
 }
 
-.plus-none {
+.form-none {
   display: none;
 }
 
@@ -240,7 +250,7 @@
   height: 70px;
 }
 
-.footer__link--plus:hover {
+.footer__link--form:hover {
   background: url(../img/plus_icon_black.png) 0 0 / 100% no-repeat;
   width: 70px;
   height: 70px;

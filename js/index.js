@@ -67,19 +67,43 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // ==============================================================================
 
+// document.addEventListener("DOMContentLoaded", function () {
+//   const houseWhite = document.querySelector("[data-js='house-white']");
+//   const houseBlack = document.querySelector("[data-js='house-black']");
+
+//   houseWhite.addEventListener("click", () => {
+//     houseBlack.classList.toggle("house-none");
+//   });
+// });
+
+// document.addEventListener("DOMContentLoaded", function () {
+//   const houseBlack = document.querySelector("[data-js='house-black']");
+
+//   houseBlack.addEventListener("click", () => {
+//     houseBlack.classList.toggle("house-none");
+//   });
+// });
+
 document.addEventListener("DOMContentLoaded", function () {
   const houseWhite = document.querySelector("[data-js='house-white']");
   const houseBlack = document.querySelector("[data-js='house-black']");
 
-  houseWhite.addEventListener("click", () => {
-    houseBlack.classList.toggle("house-none");
-  });
-});
+  // Перевірка стану при завантаженні сторінки
+  const houseState = localStorage.getItem("houseState");
+  if (houseState === "black") {
+    houseBlack.classList.remove("house-none");
+    houseWhite.classList.add("house-none");
+  }
 
-document.addEventListener("DOMContentLoaded", function () {
-  const houseBlack = document.querySelector("[data-js='house-black']");
+  houseWhite.addEventListener("click", () => {
+    houseBlack.classList.remove("house-none");
+    houseWhite.classList.add("house-none");
+    localStorage.setItem("houseState", "black"); // Зберігаємо стан в localStorage
+  });
 
   houseBlack.addEventListener("click", () => {
-    houseBlack.classList.toggle("house-none");
+    houseBlack.classList.add("house-none");
+    houseWhite.classList.remove("house-none");
+    localStorage.setItem("houseState", "white"); // Зберігаємо стан в localStorage
   });
 });
