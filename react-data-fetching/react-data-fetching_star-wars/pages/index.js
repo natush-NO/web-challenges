@@ -26,7 +26,7 @@ export default function HomePage() {
 
 const List = styled.ul`
   background-color: var(--color-light);
-  list-style-type: none; /* Змінено на none для вимкнення стандартних маркерів */
+  list-style-type: none;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -43,9 +43,7 @@ const StyledLink = styled(Link)`
   transition: background-color 0.3s, color 0.3s;
 
   &:hover {
-    background-color: var(
-      --color-primary
-    ); /* Додано для покращення взаємодії */
-    color: var(--color-light); /* Змінює колір тексту при наведенні */
+    background-color: var(--color-primary);
+    color: var(--color-light);
   }
 `;
